@@ -8,58 +8,89 @@
     android:background="#FFF8F0"
     tools:context=".MainActivity">
 
+    <!-- Company Name -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="Sabor & Cia"
         android:textColor="#FF6B35"
-        android:textSize="32sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bem-vindo ao nosso cardápio digital!"
+        android:textColor="#5C374C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <!-- Lanches Button -->
     <Button
-        android:id="@+id/menuButton"
-        android:layout_width="200dp"
+        android:id="@+id/snacksButton"
+        android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="Menu"
+        android:layout_marginTop="48dp"
+        android:text="Lanches"
         android:textSize="18sp"
         android:backgroundTint="#FF6B35"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/titleText"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="48dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText" />
 
+    <!-- Bebidas Button -->
     <Button
-        android:id="@+id/cartButton"
-        android:layout_width="200dp"
+        android:id="@+id/drinksButton"
+        android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="Carrinho"
+        android:layout_marginTop="24dp"
+        android:text="Bebidas"
         android:textSize="18sp"
         android:backgroundTint="#FF6B35"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/menuButton"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/snacksButton" />
 
+    <!-- Sobremesas Button -->
+    <Button
+        android:id="@+id/dessertsButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Sobremesas"
+        android:textSize="18sp"
+        android:backgroundTint="#FF6B35"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drinksButton" />
+
+    <!-- Optional Close Button (if needed) -->
     <Button
         android:id="@+id/closeButton"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="332dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="#D66F6F"
         android:text="Fechar"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cartButton" />
+        app:layout_constraintTop_toBottomOf="@id/dessertsButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
